@@ -16,32 +16,11 @@ if __name__ == "__main__":
     df = pd.read_csv('../input/string_bioplex.csv')
 
     df['locations'] = df['locations'].apply(lambda x: get_set(x))
-
-    print(df.shape)
-
-    locations = [
-        'Cytosol', 'Nucleoplasm', 'Plasma membrane', 'Vesicles',
-        'Mitochondria', 'Endoplasmic reticulum', 'Golgi apparatus', 'Nucleoli',
-        'Intermediate filaments', 'Centrosome', 'Nuclear speckles', 'Nuclear bodies',
-        'Cell Junctions', 'Microtubules', 'Nuclear membrane', 'Nucleoli fibrillar center'
-        ]
     
-    ids = list()
-    for i in tqdm(df.index):
-        l = df['locations'][i]
-        if len(l) != 1:                 # Remove rows that have more than 1 locations
-            ids.append(i)
-            continue
-        e = next(iter(l))
-        if e not in locations:
-            ids.append(i)
-         
-
-    df = df.drop(ids)
     print(df.shape)
     
     # Shuffle the data rows
-    # df = df.sample(frac=1, random_state=7)
+    df = df.sample(frac=1, random_state=7)
 
     prot2idx = dict()
     idx2prot = dict()
