@@ -16,4 +16,4 @@ As input, at minimum the code requires that a --train_prefix option is specified
 The above files are generated using `network.py`.
 
 ### Training
-This is followed by training the GraphSAGE mode in the unsupervised setting by using `graphsage/unsupervised_train.py`. 
+This is followed by training the GraphSAGE mode in the unsupervised setting by using `graphsage/unsupervised_train.py`. The embeddings are stored as a `.npy` file which can be easily used to extract the embeddings.
