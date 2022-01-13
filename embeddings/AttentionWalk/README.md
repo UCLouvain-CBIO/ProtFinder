@@ -9,11 +9,11 @@ This directory provides an implementation of Attention Walk as described in the 
 > NIPS, 2018.
 > [[Paper]](http://papers.nips.cc/paper/8131-watch-your-step-learning-node-embeddings-via-graph-attention)
 
-### Datasets
-The code takes an input graph in a tab-separated file. Every row indicates an edge between two nodes separated by a tab. The first row is a header. Nodes should be indexed starting with 0. The right format of the processed data (which is copied to the `input` directory) is created by `src/preprocess.py`. This adds a `.edgelist` and `.csv` file to the `input` directory. The `.edgelist` file is tab-separated whereas `.csv` stores the subcellular location information which will be used to map the output embeddings with the true annotations.
+### Steps
+- The `input` directory stores sample inputs to the embedding generation model. Note that this directory must also contain the `string_bioplex.csv` which can be found [here](https://drive.google.com/file/d/1o3gvzdcqLgZ5O0alFoqtEhXL0YvXjuDr/view?usp=sharing).
 
-### Options
-Learning of the embedding is handled by the `src/main.py` script which outputs `output/trial_attentionwalk.csv`.
-
-### Output Format Conversion
-Using the generated output and the saved `.csv` file from the `input` directory, the final training and testing files are generated in `src/embedding_csv.ipynb`.
+- The `src` directory contains multiple source code files.
+  1. `preprocess.py` converts the `string_bioplex.csv` in the right format for the attentionwalk algorithm to work. It outputs two files -- one is a .csv file which will be used to map the locations of the proteins, and the other is also the .edgelist file which will be input for the attentionwalk algorithm.
+  2. `main.py` will then generate the protein embeddings from the edgelist that was generated in the previous step. This is a .csv file which is then stored in the `output` directory. Details regarding the arguments can be found in the `param_parser.py` file. Note that this file needs to be run from outside the `src` directory as `python src/main.py` with the appropriate arguments.
+  3. Now, run the `embedding_csv.ipynb`. This will generate a csv with protein identifier, its embedding and its corresponding subcellular location.
+  4. Use `visualize_data.ipynb` to generate the t-SNE plots for the generated embeddings.
