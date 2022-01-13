@@ -76,12 +76,6 @@ def read_graph():
 		G = G.to_undirected()
 
 	print('Graph is built.')
-	# fig = plt.figure(figsize=(10, 10))
-	# nx.draw(G, with_labels=True)
-	# print("Graph is ready to be plotted.")
-	# fig.savefig('../12k.png')
-	# plt.show()
-	# quit()
 
 	return G
 

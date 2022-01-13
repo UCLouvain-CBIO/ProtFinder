@@ -2,8 +2,7 @@ This `embeddings` directory contains source codes and figures relating to two di
 
 Some minor changes will be needed to be made in the code for generating embeddings for independent STRING or BioPlex data (like file path, column name etc).
 
-# Node2Vec
-
+### Steps
 - The `data` directory stores sample inputs and outputs to the embedding generation model. Note that this directory must also contain the `string_bioplex.csv` which can be found [here](https://drive.google.com/file/d/1uVRoAZFNjormaa496YLwd3nYpoiwArbv/view?usp=sharing).
 
 - The `src` directory contains multiple source code files.
