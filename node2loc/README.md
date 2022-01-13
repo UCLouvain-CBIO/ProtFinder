@@ -107,4 +107,3 @@ Once this is done, one can see a link getting printed on the terminal/command-pr
 
 If you want to see it simultaneously with the results of experiments 1 and 2, use `--port=6008`.
 
-__NOTE:__ The results of testing node2loc (trained on `data/train_dataset.csv` for 60 epochs) on `data/test_dataset.csv` can be seen in `data/node2loc_test.txt`.
