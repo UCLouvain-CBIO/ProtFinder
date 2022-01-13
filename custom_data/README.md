@@ -1,4 +1,4 @@
-# Source Codes
+# Source Codes for Preprocessing
 
 ## Processing of Human Protein Atlas data
 This is done in `hpa_analysis.ipynb` in the `src` directory. 
