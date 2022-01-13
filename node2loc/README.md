@@ -1,4 +1,6 @@
-# Reproducing node2loc code in Pytorch
+# Reproducing node2loc in Pytorch
+
+This directory focuses on reproducing the results produced by [node2loc](https://ieeexplore.ieee.org/document/9431661).
 
 ## data_loader.py
 Creates an object of the `Dataset` class. This is build using the training data of [node2loc](https://github.com/xypan1232/node2loc). The input to the model is a 500 dimensional vector generated from [node2vec](https://github.com/aditya-grover/node2vec). The target is the class label from 1 to 16. 
