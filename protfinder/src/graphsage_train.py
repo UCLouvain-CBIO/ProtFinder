@@ -187,7 +187,7 @@ def get_args():
     
     returns : <class argparse.Namespace> : argument values
     '''
-    parser = ArgumentParser(description="This a reimplementation of node2loc",
+    parser = ArgumentParser(description="Training of GraphSAGE model",
                         formatter_class=ArgumentDefaultsHelpFormatter)
 
     parser.add_argument("-c", "--nclass", type=int,
