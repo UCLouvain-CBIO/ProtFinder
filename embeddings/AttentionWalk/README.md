@@ -1,4 +1,6 @@
-Attention Walk code was obtained from [here](https://github.com/benedekrozemberczki/AttentionWalk).
+# AttentionWalk
+
+AttentionWalk code was obtained from [here](https://github.com/benedekrozemberczki/AttentionWalk). Please create an `input` and `output` directory along with `src`.
 
 This directory provides an implementation of Attention Walk as described in the paper:
 
