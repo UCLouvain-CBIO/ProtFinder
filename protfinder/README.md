@@ -28,7 +28,10 @@ To train and test the ProtFinder model, one must first copy the files generated 
 Training is done by calling `src/train.py` with the appropriate arguments. An example of the command can be found in `src/train.sh`. To train using the GraphSAGE model, one must run `src/graphsage_train.py` using a similar set of arguments. If `--save` flag is used the model will be saved in the `models` directory.
 
 ### Hyperparameter Optimization
-Hyperparameter optimization is done using (Facebook's Ax)[https://github.com/facebook/Ax]. This can be done by using similar arguments as training to `src/hyperparameter_opt.py`.
+Hyperparameter optimization is done using [Facebook's Ax](https://github.com/facebook/Ax). This can be done by using similar arguments as training to `src/hyperparameter_opt.py`.
+
+### Visualization
+One can use `src/visualize.py` to obtain the different barplots shown in the manuscript.
 
 ### Inference
 To predict the location annotations for proteins that do not have confident annotations in the Human Protein Atlas, one can use `src/infer.py`. The arguments for the same can be found in `src/infer.sh`. If the `--save` option is used, the probabilities will be saved in the `results` directory.
