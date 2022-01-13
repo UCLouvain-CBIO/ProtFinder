@@ -31,7 +31,7 @@ Training is done by calling `src/train.py` with the appropriate arguments. An ex
 Hyperparameter optimization is done using [Facebook's Ax](https://github.com/facebook/Ax). This can be done by using similar arguments as training to `src/hyperparameter_opt.py`.
 
 ### Visualization
-One can use `src/visualize.py` to obtain the different barplots shown in the manuscript.
+One can run `src/visualize.py` to obtain the different barplots shown in the manuscript. The barplot() function is used to plot the distribution of the predicted subcellular locations of test proteins whereas the violin_plot() function can be used to observe the distribution of difference between target and predicted probabilities for each subcellular location. 
 
 ### Inference
 To predict the location annotations for proteins that do not have confident annotations in the Human Protein Atlas, one can use `src/infer.py`. The arguments for the same can be found in `src/infer.sh`. If the `--save` option is used, the probabilities will be saved in the `results` directory.
