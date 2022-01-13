@@ -59,7 +59,7 @@ def violin_plot(target, pred):
     ax[1].yaxis.grid(True)
 
     fig.tight_layout()
-    fig.savefig('../figures/box/combined_more_exp1_0.7.png')
+    fig.savefig('../combined_more_exp1_0.7.png')
 
 def barplot():
     tar = {'1': 2232, '3': 11, '2': 445, '0': 0, '18': 0}

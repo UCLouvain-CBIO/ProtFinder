@@ -207,7 +207,7 @@ def get_args():
     parser.add_argument("-d", "--dataset", type=str,
                         help="The path of dataset.", required=True)
     parser.add_argument("-m", "--modelpath", type=str,
-                        help="The path for saving model.", default='../models/bioplex_exp1_0.7.pt')
+                        help="The path for saving model.", default='../models/graphsage.pt')
     parser.add_argument("-lr", "--learningrate", type=float,
                         help="Learning rate.", default=1e-2)
     parser.add_argument("-g", "--gpu",
