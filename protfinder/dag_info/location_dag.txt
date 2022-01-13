@@ -1,0 +1,20 @@
+Cell Junctions,Focal adhesion sites
+Cytokinetic bridge
+Midbody,Midbody ring
+Plasma membrane
+Cytosol
+Vesicles,Endoplasmic reticulum
+Vesicles,Golgi apparatus
+Vesicles,Endosomes
+Vesicles,Mitochondria
+Vesicles,Peroxisomes
+Vesicles,Lysosomes
+Vesicles,Nuclear membrane
+Vesicles,Nucleoplasm,Nuclear bodies,Nuclear speckles
+Vesicles,Nucleoli,Nucleoli fibrillar center
+Cytoplasmic bodies
+Lipid droplets
+Intermediate filaments
+Actin filaments
+Microtubules,Mitotic spindle
+Microtubules,Centrosome,Centriolar satellite
