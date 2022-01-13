@@ -13,7 +13,7 @@ def get_set(x):
 
 if __name__ == "__main__":
     
-    df = pd.read_csv('../input/string_locs2.csv')
+    df = pd.read_csv('../input/string_bioplex.csv')
 
     df['locations'] = df['locations'].apply(lambda x: get_set(x))
 
@@ -71,8 +71,6 @@ if __name__ == "__main__":
     max_score = max(df['combined_score'].to_list())
     df['combined_score'] = df['combined_score'].apply(lambda x: ((x/max_score)))
     # df = df.sort_values('combined_score', ascending=False)
-
-    df = df.iloc[:12000, :]             # Pick first 12,000 data-points
 
     df2 = df[['protein1', 'protein2', 'locations']]
     df = df[['protein1', 'protein2', 'combined_score']]
