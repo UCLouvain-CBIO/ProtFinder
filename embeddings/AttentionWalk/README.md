@@ -10,7 +10,7 @@ This directory provides an implementation of Attention Walk as described in the 
 > [[Paper]](http://papers.nips.cc/paper/8131-watch-your-step-learning-node-embeddings-via-graph-attention)
 
 ### Steps
-- The `input` directory stores sample inputs to the embedding generation model. Note that this directory must also contain the `string_bioplex.csv` which can be found [here](https://drive.google.com/file/d/1o3gvzdcqLgZ5O0alFoqtEhXL0YvXjuDr/view?usp=sharing).
+- The `input` directory stores sample inputs to the embedding generation model. Note that this directory must also contain the `string_bioplex.csv` which can be found [here](https://drive.google.com/file/d/1uVRoAZFNjormaa496YLwd3nYpoiwArbv/view?usp=sharing).
 
 - The `src` directory contains multiple source code files.
   1. `preprocess.py` converts the `string_bioplex.csv` in the right format for the attentionwalk algorithm to work. It outputs two files -- one is a .csv file which will be used to map the locations of the proteins, and the other is also the .edgelist file which will be input for the attentionwalk algorithm.
