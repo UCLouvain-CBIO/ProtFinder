@@ -59,9 +59,9 @@ def get_list(x):
 
 def parse_args():
 	'''
-	Parses the node2vec arguments.
+	Parses the arguments.
 	'''
-	parser = argparse.ArgumentParser(description="Run node2vec.")
+	parser = argparse.ArgumentParser(description="Run GraphSage.")
 
 	parser.add_argument('--input', nargs='?', default='../data/selected.edgelist',
 						help='Input graph path')
